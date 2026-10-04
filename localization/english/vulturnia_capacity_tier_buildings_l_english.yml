@@ -1,0 +1,6 @@
+l_english:
+  # ==============================
+  # Capacity buildings
+  # ==============================
+  building_vulturnia_capacity_tier_1: "Animal Capacity Barn"
+  building_vulturnia_capacity_tier_1_desc: "A modest shelter for animal care and management.\n\n+20 Animal Capacity\n+0.25 Gold/Month\n+0.3 Animal Influence\n\nCost: 50 Gold"

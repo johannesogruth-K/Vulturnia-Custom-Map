@@ -1,0 +1,29 @@
+# ==============================
+# Vulturnia Capacity Tier Buildings
+# ==============================
+# Small animal economy buildings with direct capacity bonuses.
+# These are intentionally cheap and easy to spam, but do not scale as well as larger temples/holdings.
+
+building_vulturnia_capacity_tier_1 = {
+	type = temple
+	tier = 1
+	gold_cost = 50
+	build_time = 180
+	
+	requirements = {
+		building_requirement_aquis_faith = {
+			religion = aquis
+		}
+	}
+	
+	province_modifier = {
+		vulturnia_animal_capacity_limit = 20
+		vulturnia_animal_influence = 0.3
+	}
+	
+	character_modifier = {
+		monthly_income = 0.25
+	}
+	
+	description = "building_vulturnia_capacity_tier_1_desc"
+}
