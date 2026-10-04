@@ -1,0 +1,36 @@
+l_english:
+  # ==============================
+  # Holding Type Localization
+  # ==============================
+  holding_animal_center: "Animal Center"
+  animal_center_holding_desc: "A sprawling complex dedicated entirely to the care, training, and management of animals. Only the Aquis faith may establish such sanctuaries.\n\n+5 Building Slots\n+100 Supply Limit\n+0.5 Base Income"
+
+  # ==============================
+  # Animal Control Modifiers
+  # ==============================
+  vulturnia_animal_full_control: "Full Control"
+  vulturnia_animal_full_control_desc: "You maintain complete dominion over your animals. All buildings and animals are under your direct command. You can direct their actions in warfare and labor, but efficiency is reduced."
+  
+  vulturnia_animal_strict_control: "Strict Control"
+  vulturnia_animal_strict_control_desc: "Your animals are closely managed and obedient. You retain full command authority but gain modest production bonuses."
+  
+  vulturnia_animal_balanced: "Balanced Management"
+  vulturnia_animal_balanced_desc: "A healthy balance between your authority and animal autonomy. Animals work efficiently with moderate oversight. You can still direct them when needed."
+  
+  vulturnia_animal_mostly_autonomous: "Mostly Autonomous"
+  vulturnia_animal_mostly_autonomous_desc: "Your animals operate largely independently. Production is significantly boosted, but you lose direct control in some situations."
+  
+  vulturnia_animal_full_autonomy: "Full Autonomy"
+  vulturnia_animal_full_autonomy_desc: "Your animals are completely autonomous. They work with maximum efficiency and production, but they will not obey commands. You cannot siphon their treasury or use them in directed warfare."
+  
+  vulturnia_animal_disobedience_penalty: "Animal Disobedience"
+  vulturnia_animal_disobedience_penalty_desc: "Your animals refuse to obey commands. With too much autonomy, they will not respond to your direction in warfare or labor."
+
+  # ==============================
+  # Control Trait Localization
+  # ==============================
+  aquis_animal_controller: "Aquis Animal Controller"
+  aquis_animal_controller_desc: "This character believes animals must be strictly controlled and dominated. They maintain firm command over their animal holdings and extract maximum taxes, but animals work less efficiently."
+  
+  aquis_animal_liberator: "Aquis Animal Liberator"
+  aquis_animal_liberator_desc: "This character believes in granting animals freedom and autonomy. Animals work with greater enthusiasm and produce more, but they are harder to command directly."

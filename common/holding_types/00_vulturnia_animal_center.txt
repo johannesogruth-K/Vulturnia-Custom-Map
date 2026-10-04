@@ -1,0 +1,39 @@
+# ==============================
+# Vulturnia Holding Types
+# ==============================
+# Animal Center - A custom holding type exclusively for animal buildings
+
+holding_animal_center = {
+	displayname = "Animal Center"
+	description = "animal_center_holding_desc"
+	icon = "gfx/interface/icons/holding_types/holding_type_animal_center.dds"
+	
+	# Base statistics
+	base_income = 0.5
+	base_garrison = 50
+	base_supply = 100
+	
+	# Building slots specific to animal centers
+	building_slots = 5
+	
+	# Only allow animal-related buildings
+	allowed_holdings = none
+	allowed_buildings = {
+		building_vulturnia_breeding_grounds
+		building_vulturnia_animal_hospitality
+		building_vulturnia_bear_wrestling_club
+		building_vulturnia_parrot_gold_mining
+		building_vulturnia_monkey_tree_cutters
+		building_vulturnia_rhino_transport_service
+		building_vulturnia_lion_hunting_grounds
+		building_vulturnia_elephant_construction_crew
+		building_vulturnia_crow_animal_university
+		building_vulturnia_wolf_community
+	}
+	
+	# Restrictions
+	requires_religion = aquis
+	
+	# AI budget weight
+	ai_value = 50
+}

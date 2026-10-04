@@ -1,0 +1,70 @@
+# ==============================
+# Vulturnia Animal Control System Script Values
+# ==============================
+
+# Determine current control policy level (0-100)
+vulturnia_get_animal_control_level = {
+	value = 0
+	if = {
+		limit = { has_county_modifier = vulturnia_animal_full_control }
+		add = 0
+	}
+	if = {
+		limit = { has_county_modifier = vulturnia_animal_strict_control }
+		add = 20
+	}
+	if = {
+		limit = { has_county_modifier = vulturnia_animal_balanced }
+		add = 40
+	}
+	if = {
+		limit = { has_county_modifier = vulturnia_animal_mostly_autonomous }
+		add = 60
+	}
+	if = {
+		limit = { has_county_modifier = vulturnia_animal_full_autonomy }
+		add = 100
+	}
+}
+
+# Get bonus modifier based on autonomy level
+vulturnia_get_autonomy_bonus = {
+	value = 0
+	if = {
+		limit = { vulturnia_get_animal_control_level >= 80 }
+		add = 0.60	# 60% bonus at full autonomy
+	}
+	else_if = {
+		limit = { vulturnia_get_animal_control_level >= 60 }
+		add = 0.35	# 35% bonus at mostly autonomous
+	}
+	else_if = {
+		limit = { vulturnia_get_animal_control_level >= 40 }
+		add = 0.15	# 15% bonus at balanced
+	}
+	else_if = {
+		limit = { vulturnia_get_animal_control_level >= 20 }
+		add = 0.05	# 5% bonus at strict control
+	}
+	else = {
+		add = -0.10	# -10% penalty at full control
+	}
+}
+
+# Check if player can use animal power (control-dependent)
+vulturnia_can_use_animal_power = {
+	value = 0
+	if = {
+		limit = { vulturnia_get_animal_control_level <= 60 }
+		add = 1
+	}
+}
+
+# Check if animals are autonomous (will not obey commands)
+vulturnia_animals_autonomous = {
+	value = 0
+	if = {
+		limit = { vulturnia_get_animal_control_level >= 80 }
+		add = 1
+	}
+}

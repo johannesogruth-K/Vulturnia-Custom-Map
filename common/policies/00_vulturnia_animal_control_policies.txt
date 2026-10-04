@@ -1,0 +1,40 @@
+# ==============================
+# Vulturnia Animal Control Policy
+# ==============================
+# Tracks the balance between player control and animal autonomy
+# This is a county/province variable that scales from 0% to 100%
+# 0% = Full Control (extra penalties)
+# 20% = Some autonomy, can still build/control
+# 40% = Balanced (best cost/benefit)
+# 60% = Animals mostly autonomous
+# 100% = Full Autonomy (high bonuses, no control)
+
+vulturnia_animal_control_policy_full = {
+	name = "Full Control"
+	description = "You maintain complete dominion over animal operations. Requires constant management."
+	value = 0
+}
+
+vulturnia_animal_control_policy_strict = {
+	name = "Strict Control"
+	description = "Animals are closely managed. You retain most control over holdings and armies."
+	value = 20
+}
+
+vulturnia_animal_control_policy_balanced = {
+	name = "Balanced Management"
+	description = "A healthy balance between control and autonomy. Animals work efficiently with moderate oversight."
+	value = 40
+}
+
+vulturnia_animal_control_policy_autonomous = {
+	name = "Mostly Autonomous"
+	description = "Animals operate largely independently. You gain significant production bonuses but lose some control."
+	value = 60
+}
+
+vulturnia_animal_control_policy_full_autonomy = {
+	name = "Full Autonomy"
+	description = "Animals are completely autonomous. Maximum production bonuses, but you cannot control them."
+	value = 100
+}

@@ -1,0 +1,101 @@
+# ==============================
+# Vulturnia Animal Control System Decisions
+# ==============================
+namespace = vulturnia_decisions
+
+# Decision to change animal control policy in a county
+decision_vulturnia_change_animal_control_policy = {
+	picture = "gfx/pictures/decisions/decision_animal_control.dds"
+	
+	desc = "decision_vulturnia_change_animal_control_policy_desc"
+	
+	is_shown = {
+		religion = aquis
+	}
+	
+	is_valid = {
+		any_held_title = {
+			is_county = yes
+		}
+	}
+	
+	option = {
+		name = "decision_vulturnia_full_control"
+		
+		effect = {
+			# Set to full control policy
+			add_county_modifier = {
+				modifier = vulturnia_animal_full_control
+			}
+		}
+	}
+	
+	option = {
+		name = "decision_vulturnia_strict_control"
+		
+		effect = {
+			add_county_modifier = {
+				modifier = vulturnia_animal_strict_control
+			}
+		}
+	}
+	
+	option = {
+		name = "decision_vulturnia_balanced"
+		
+		effect = {
+			add_county_modifier = {
+				modifier = vulturnia_animal_balanced
+			}
+		}
+	}
+	
+	option = {
+		name = "decision_vulturnia_mostly_autonomous"
+		
+		effect = {
+			add_county_modifier = {
+				modifier = vulturnia_animal_mostly_autonomous
+			}
+		}
+	}
+	
+	option = {
+		name = "decision_vulturnia_full_autonomy"
+		
+		effect = {
+			add_county_modifier = {
+				modifier = vulturnia_animal_full_autonomy
+			}
+			add_county_modifier = {
+				modifier = vulturnia_animal_disobedience_penalty
+			}
+		}
+	}
+}
+
+# Decision to construct an Animal Center holding
+decision_vulturnia_construct_animal_center = {
+	picture = "gfx/pictures/decisions/decision_construct_animal_center.dds"
+	
+	desc = "decision_vulturnia_construct_animal_center_desc"
+	
+	is_shown = {
+		religion = aquis
+		is_landed = yes
+	}
+	
+	is_valid = {
+		# County must have space for a new holding
+		primary_title = {
+			is_county = yes
+			# Add more validation as needed
+		}
+	}
+	
+	effect = {
+		# Create an Animal Center holding (placeholder logic)
+		add_gold = -500
+		add_prestige = 50
+	}
+}

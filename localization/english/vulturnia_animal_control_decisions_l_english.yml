@@ -1,0 +1,21 @@
+l_english:
+  # ==============================
+  # Animal Control Policy Localization
+  # ==============================
+  decision_vulturnia_change_animal_control_policy: "Adjust Animal Control Policy"
+  decision_vulturnia_change_animal_control_policy_desc: "Choose how to manage your animals. Balance control with efficiency, or grant them autonomy for greater production."
+  
+  decision_vulturnia_full_control: "Maintain Full Control"
+  decision_vulturnia_strict_control: "Enforce Strict Control"
+  decision_vulturnia_balanced: "Establish Balanced Management"
+  decision_vulturnia_mostly_autonomous: "Grant Mostly Autonomous Operation"
+  decision_vulturnia_full_autonomy: "Grant Full Autonomy"
+  
+  decision_vulturnia_construct_animal_center: "Construct an Animal Center"
+  decision_vulturnia_construct_animal_center_desc: "Build a magnificent Animal Center holding in one of your counties. This sacred complex can only house animal-related buildings and requires the Aquis faith.\n\nCost: 500 Gold"
+  
+  # ==============================
+  # Control System Tooltips
+  # ==============================
+  animal_control_tooltip_full: "Your animals are completely under your command. You can direct them in warfare and extract all taxes. However, efficiency is reduced."
+  animal_control_tooltip_autonomous: "Your animals work with maximum efficiency and autonomy. Production is boosted significantly, but they will not obey commands in warfare."

@@ -1,0 +1,31 @@
+# ==============================
+# Vulturnia Animal Control & Autonomy Traits
+# ==============================
+
+aquis_animal_controller = {
+	displayname = "aquis_animal_controller"
+	description = "aquis_animal_controller_desc"
+	category = personality
+	common = no
+	ghostrate = 0.3
+	
+	character_modifier = {
+		vulturnia_animal_influence = -0.1
+		stewardship = 2
+		county_tax_modifier = 0.10
+	}
+}
+
+aquis_animal_liberator = {
+	displayname = "aquis_animal_liberator"
+	description = "aquis_animal_liberator_desc"
+	category = personality
+	common = no
+	ghostrate = 0.3
+	
+	character_modifier = {
+		vulturnia_animal_influence = 0.25
+		monthly_income = 0.15
+		diplomacy = 1
+	}
+}

@@ -1,0 +1,13 @@
+l_english:
+  vulturnia_animal_control.0001.t: "Animals Gaining Autonomy"
+  vulturnia_animal_control.0001.desc: "Your animals have begun to work more independently, trusting in their own instincts rather than your constant direction. Productivity is increasing as they no longer require micromanagement."
+  vulturnia_animal_control.0001.a: "This is the way of the Aquis faith."
+  
+  vulturnia_animal_control.0002.t: "Animals Refuse Commands"
+  vulturnia_animal_control.0002.desc: "Your animals have become so autonomous that they no longer respond to your commands. They work efficiently on their own, but you cannot direct them in warfare or extract their full resources."
+  vulturnia_animal_control.0002.a: "I must accept their independence."
+  vulturnia_animal_control.0002.b: "I must reassert control!"
+  
+  vulturnia_animal_control.0003.t: "Animal Center Established"
+  vulturnia_animal_control.0003.desc: "A magnificent Animal Center has been completed. This sacred holding will serve as the heart of your animal empire, housing only the finest animal-based buildings."
+  vulturnia_animal_control.0003.a: "Praise the Aquis faith!"

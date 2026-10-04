@@ -1,0 +1,81 @@
+# ==============================
+# Vulturnia Animal Control System Events
+# ==============================
+namespace = vulturnia_animal_control
+
+# Event: Animals gaining autonomy
+event = {
+	id = vulturnia_animal_control.0001
+	title = "vulturnia_animal_control.0001.t"
+	description = "vulturnia_animal_control.0001.desc"
+	picture = "gfx/events/character_interactions/courtyard.dds"
+	
+	trigger = {
+		religion = aquis
+		any_held_title = {
+			has_county_modifier = vulturnia_animal_mostly_autonomous
+		}
+	}
+	
+	immediate = {
+		# Trigger on gaining more autonomy
+	}
+	
+	option = {
+		name = "vulturnia_animal_control.0001.a"
+		add_prestige = 25
+		add_gold = 50
+	}
+}
+
+# Event: Animals refusing commands (at full autonomy)
+event = {
+	id = vulturnia_animal_control.0002
+	title = "vulturnia_animal_control.0002.t"
+	description = "vulturnia_animal_control.0002.desc"
+	picture = "gfx/events/character_interactions/war.dds"
+	
+	trigger = {
+		religion = aquis
+		any_held_title = {
+			has_county_modifier = vulturnia_animal_full_autonomy
+			has_county_modifier = vulturnia_animal_disobedience_penalty
+		}
+	}
+	
+	immediate = {
+		# Animals refuse command
+	}
+	
+	option = {
+		name = "vulturnia_animal_control.0002.a"
+		add_prestige = -25
+	}
+	
+	option = {
+		name = "vulturnia_animal_control.0002.b"
+		# Reduce autonomy
+		add_gold = 100
+	}
+}
+
+# Event: Animal Center constructed successfully
+event = {
+	id = vulturnia_animal_control.0003
+	title = "vulturnia_animal_control.0003.t"
+	description = "vulturnia_animal_control.0003.desc"
+	picture = "gfx/events/character_interactions/council.dds"
+	
+	trigger = {
+		religion = aquis
+	}
+	
+	immediate = {
+		# Placeholder for Animal Center construction event
+	}
+	
+	option = {
+		name = "vulturnia_animal_control.0003.a"
+		add_prestige = 100
+	}
+}

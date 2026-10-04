@@ -1,0 +1,52 @@
+# ==============================
+# Vulturnia - Control/Autonomy System Modifiers
+# ==============================
+
+# Full Control (0%)
+vulturnia_animal_full_control = {
+	icon = "gfx/interface/icons/modifiers/modifier_animal_control.dds"
+	description = "vulturnia_animal_full_control_desc"
+	# Full control means better direct management
+	county_tax_modifier = -0.05
+	monthly_income = -0.1
+}
+
+# Strict Control (20%)
+vulturnia_animal_strict_control = {
+	icon = "gfx/interface/icons/modifiers/modifier_animal_control.dds"
+	description = "vulturnia_animal_strict_control_desc"
+	monthly_income = 0.05
+	vulturnia_animal_influence = 0.1
+}
+
+# Balanced (40%)
+vulturnia_animal_balanced = {
+	icon = "gfx/interface/icons/modifiers/modifier_animal_balanced.dds"
+	description = "vulturnia_animal_balanced_desc"
+	monthly_income = 0.15
+	vulturnia_animal_influence = 0.25
+}
+
+# Mostly Autonomous (60%)
+vulturnia_animal_mostly_autonomous = {
+	icon = "gfx/interface/icons/modifiers/modifier_animal_autonomous.dds"
+	description = "vulturnia_animal_mostly_autonomous_desc"
+	monthly_income = 0.35
+	vulturnia_animal_influence = 0.5
+}
+
+# Full Autonomy (100%)
+vulturnia_animal_full_autonomy = {
+	icon = "gfx/interface/icons/modifiers/modifier_animal_full_autonomy.dds"
+	description = "vulturnia_animal_full_autonomy_desc"
+	monthly_income = 0.6
+	vulturnia_animal_influence = 0.75
+}
+
+# Penalties for autonomy (animals won't listen to commands)
+vulturnia_animal_disobedience_penalty = {
+	icon = "gfx/interface/icons/modifiers/modifier_animal_disobedience.dds"
+	description = "vulturnia_animal_disobedience_penalty_desc"
+	warfare_hostility = 0.15
+	army_damage_mult = -0.10
+}
