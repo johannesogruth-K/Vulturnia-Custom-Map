@@ -1,0 +1,30 @@
+# ==============================
+# Vulturnia Animal Aging and Autonomy Rules
+# ==============================
+# This file is intentionally simple and meant to be a mod scaffold.
+# It sets the design logic for aging and autonomy growth.
+
+l_english:
+  # Animal lifespan concept
+  vulturnia_animal_lifespan_base: "Animal Lifespan"
+  vulturnia_animal_lifespan_base_desc: "Animals live long lives in Aquis culture, typically around 10-30 years depending on their breeding and care."
+
+  vulturnia_animal_max_age: "Animal Maximum Age"
+  vulturnia_animal_max_age_desc: "The age a healthy animal may live before dying of old age. This is intentionally long so it can be tuned later."
+
+  # Autonomy growth logic
+  vulturnia_animal_autonomy_growth: "Autonomy Growth"
+  vulturnia_animal_autonomy_growth_desc: "If Animal Influence exceeds Gold in a county, the autonomy slider gradually shifts upward."
+
+  vulturnia_animal_autonomy_tick: "Autonomy Tick"
+  vulturnia_animal_autonomy_tick_desc: "A gradual movement toward animal autonomy when influence becomes more valuable than gold."
+
+  # Events / interaction text
+  vulturnia_animal_old_age.0001.t: "Animals Reaching Old Age"
+  vulturnia_animal_old_age.0001.desc: "The oldest members of your animal population have reached the end of their natural lifespan. Their passing is a solemn reminder that even the strongest and most beloved creatures eventually age and die."
+  vulturnia_animal_old_age.0001.a: "The cycle of life continues."
+
+  vulturnia_animal_old_age.0002.t: "Influence Surpasses Gold"
+  vulturnia_animal_old_age.0002.desc: "The animals are becoming more independent. Your Animal Influence now exceeds your wealth, and the balance of control begins to tilt toward autonomy."
+  vulturnia_animal_old_age.0002.a: "Let the creatures choose their own path."
+  vulturnia_animal_old_age.0002.b: "Reassert control before they drift too far."

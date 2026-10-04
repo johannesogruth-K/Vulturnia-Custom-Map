@@ -1,0 +1,53 @@
+# ==============================
+# Vulturnia Animal Aging Events
+# ==============================
+namespace = vulturnia_animal_old_age
+
+# Event: Very old animals die
+# This is a placeholder event to represent natural old-age deaths.
+event = {
+	id = vulturnia_animal_old_age.0001
+	title = "vulturnia_animal_old_age.0001.t"
+	description = "vulturnia_animal_old_age.0001.desc"
+	picture = "gfx/events/character_interactions/family.dds"
+	
+	trigger = {
+		religion = aquis
+		any_held_title = {
+			has_county_modifier = vulturnia_animal_influence
+		}
+	}
+	
+	option = {
+		name = "vulturnia_animal_old_age.0001.a"
+		add_prestige = 10
+	}
+}
+
+# Event: Influence surpasses gold, autonomy rises
+# This is a placeholder event for the control/autonomy system.
+event = {
+	id = vulturnia_animal_old_age.0002
+	title = "vulturnia_animal_old_age.0002.t"
+	description = "vulturnia_animal_old_age.0002.desc"
+	picture = "gfx/events/character_interactions/council.dds"
+	
+	trigger = {
+		religion = aquis
+		any_held_title = {
+			has_county_modifier = vulturnia_animal_influence
+		}
+	}
+	
+	option = {
+		name = "vulturnia_animal_old_age.0002.a"
+		add_prestige = 20
+		add_county_modifier = { modifier = vulturnia_animal_mostly_autonomous }
+	}
+	
+	option = {
+		name = "vulturnia_animal_old_age.0002.b"
+		add_gold = -50
+		add_county_modifier = { modifier = vulturnia_animal_balanced }
+	}
+}
