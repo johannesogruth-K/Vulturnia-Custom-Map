@@ -1,52 +1,37 @@
 # ==============================
-# Vulturnia Animal Aging System README
+# Vulturnia Animal Aging & Autonomy Design Notes
 # ==============================
 
-## Animal Lifespan Rule
+## Safe cleanup pass
 
-Animals in the Aquis tradition do not die quickly. Their natural lifespan is deliberately long, with the design target being approximately 10-30 years depending on species, care, and environment.
+This version keeps the original concept but removes the most fragile placeholder logic.
+The design intent remains the same:
 
-This is meant to be tuned later, but the core concept is:
+- Animals age slowly, with a lifespan target of roughly 10-30 years
+- Old age eventually causes a natural death event
+- If Animal Influence exceeds Gold, autonomy increases gradually
+- The autonomy shift is represented by the county policy system already in the mod
 
-- animals live long enough to grow into important economic and military assets
-- old age is a real natural event
-- the oldest members can die of age, creating historical rhythm and population turnover
+## Core rules
 
-## Autonomy Gain Condition
+1. Long animal lifespan
+   - Base target range: 10-30 years
+   - Intended for tuning later
 
-The autonomy system is intentionally simple:
+2. Old-age death event
+   - Represented by a simple event trigger
+   - Can later be expanded with species-specific age curves
 
-- If the county or realm's **Animal Influence** becomes greater than **Gold**,
-- the autonomy slider gradually ticks upward over time,
-- leading to more animal independence.
+3. Autonomy growth loop
+   - When Animal Influence becomes stronger than Gold, the county drifts toward more autonomy
+   - More autonomy gives higher production bonuses, but weaker direct control
 
-This creates a gameplay loop:
+## Future tuning
 
-1. You build animal infrastructure and accumulate influence
-2. Influence rises faster than gold
-3. Animals begin to act with more independence
-4. The control/autonomy slider shifts toward freedom
-5. You gain stronger bonuses, but lose more command over the animals
+- Raise/lower the lifespan values in `vulturnia_animal_lifespan_min/max`
+- Increase/decrease the autonomy gain in `vulturnia_animal_autonomy_gain`
+- Replace the placeholder event triggers with more specific province or county checks later
 
-## Balance Tuning Guidance
+## Important note
 
-The values can be tuned later to fit the intended powercurve:
-
-- **Lifespan**: 10-30 years is a good placeholder range
-- **Autonomy growth tick**: use small increments (e.g. 0.5-2 per month/annual cycle) for future tuning
-- **Influence threshold**: gold vs influence comparison should eventually be replaced by actual scoped province or county values
-
-## Future Expansion
-
-Possible next items:
-
-- species-specific lifespan values
-- breeding and elder animal events
-- a monthly check that compares animal influence and gold
-- age-based mortality events
-- disease or health modifiers affecting lifespan
-- a custom UI element for current animal age and autonomy
-
----
-
-The Aquis faith respects life, even when life ends. The oldest animals die with dignity, and with each passing generation the balance between control and freedom shifts again.
+This is still a framework-style mod scaffold rather than a guaranteed live CK3 test build. It is meant to be safe, readable, and easier to tune without breaking parser logic.

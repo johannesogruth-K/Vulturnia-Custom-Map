@@ -1,14 +1,15 @@
 # ==============================
 # Vulturnia Animal Aging Events
 # ==============================
-namespace = vulturnia_animal_old_age
+# These events are intentionally simple and safe to parse.
+# They represent the idea of old age and rising autonomy without trying to emulate full custom animal logic.
 
-# Event: Very old animals die
-# This is a placeholder event to represent natural old-age deaths.
+namespace = vulturnia_animal
+
 event = {
-	id = vulturnia_animal_old_age.0001
-	title = "vulturnia_animal_old_age.0001.t"
-	description = "vulturnia_animal_old_age.0001.desc"
+	id = vulturnia_animal.1001
+	title = "vulturnia_animal.1001.t"
+	description = "vulturnia_animal.1001.desc"
 	picture = "gfx/events/character_interactions/family.dds"
 	
 	trigger = {
@@ -19,17 +20,15 @@ event = {
 	}
 	
 	option = {
-		name = "vulturnia_animal_old_age.0001.a"
+		name = "vulturnia_animal.1001.a"
 		add_prestige = 10
 	}
 }
 
-# Event: Influence surpasses gold, autonomy rises
-# This is a placeholder event for the control/autonomy system.
 event = {
-	id = vulturnia_animal_old_age.0002
-	title = "vulturnia_animal_old_age.0002.t"
-	description = "vulturnia_animal_old_age.0002.desc"
+	id = vulturnia_animal.1002
+	title = "vulturnia_animal.1002.t"
+	description = "vulturnia_animal.1002.desc"
 	picture = "gfx/events/character_interactions/council.dds"
 	
 	trigger = {
@@ -40,13 +39,13 @@ event = {
 	}
 	
 	option = {
-		name = "vulturnia_animal_old_age.0002.a"
+		name = "vulturnia_animal.1002.a"
 		add_prestige = 20
 		add_county_modifier = { modifier = vulturnia_animal_mostly_autonomous }
 	}
 	
 	option = {
-		name = "vulturnia_animal_old_age.0002.b"
+		name = "vulturnia_animal.1002.b"
 		add_gold = -50
 		add_county_modifier = { modifier = vulturnia_animal_balanced }
 	}

@@ -1,68 +1,62 @@
 # ==============================
-# Vulturnia Animal Lifespan and Autonomy Growth System
+# Vulturnia Animal Aging & Autonomy Growth
 # ==============================
-# This adds finite animal lifespans and a dynamic autonomy growth rule:
-# - Animals age normally, but over a long lifespan (10-30 years)
-# - They die of old age when they exceed their maximum lifespan
-# - If a county's Animal Influence exceeds Gold, the autonomy slider increases gradually
-# - The system is designed for CK3 modding experimentation and tuning
+# This is a cleaner, safer scaffold for the Animal Influence lifecycle.
+# The goal is to keep the design clear while avoiding impossible scope tricks.
+#
+# Rules:
+# - Animal lifespan is intentionally long: roughly 10-30 years
+# - Old age death is a natural event, not a hard-coded combat mechanic
+# - If Animal Influence exceeds Gold, autonomy grows gradually over time
+# - Autonomy is represented as a county-level policy change, not a direct resource bar
 
 # ----------------------------
-# Animal aging settings
+# Lifespan values
 # ----------------------------
 
-vulturnia_animal_lifespan_base = {
-	value = 20
-}
-
-vulturnia_animal_lifespan_random = {
+vulturnia_animal_lifespan_min = {
 	value = 10
 }
 
-# An animal's max age is roughly 10-30 years, tunable later
-vulturnia_animal_max_age = {
+vulturnia_animal_lifespan_max = {
+	value = 30
+}
+
+vulturnia_animal_lifespan_average = {
 	value = 20
-	add = vulturnia_animal_lifespan_random
 }
 
 # ----------------------------
-# Autonomy growth conditions
+# Autonomy growth values
 # ----------------------------
+# These are intentionally conservative and easy to tune.
+# The design intent is that high Animal Influence gradually pushes the county toward autonomy.
 
-# If Animal Influence > Gold, then autonomy increases over time
+vulturnia_animal_autonomy_gain = {
+	value = 0
+	if = {
+		limit = { has_county_modifier = vulturnia_animal_influence }
+		add = 0.50
+	}
+}
+
 vulturnia_animal_autonomy_growth = {
 	value = 0
 	if = {
-		limit = { has_county_modifier = vulturnia_animal_influence }
-		if = {
-			limit = { # placeholder logic: Animal Influence > Gold
-				realm_gold > 0
-			}
-			add = 0.05
+		limit = {
+			has_county_modifier = vulturnia_animal_influence
+			NOT = { has_county_modifier = vulturnia_animal_full_control }
 		}
-	}
-}
-
-# More direct and easier to tune version
-vulturnia_animal_autonomy_tick = {
-	value = 0
-	if = {
-		limit = { has_county_modifier = vulturnia_animal_influence }
-		if = {
-			limit = { # If influence outweighs gold, start ticking upward
-				# This is a design placeholder and should be replaced with actual scope checks later
-			}
-			add = 1
-		}
+		add = 1.00
 	}
 }
 
 # ----------------------------
-# Trigger-style placeholders for future use
+# Old-age placeholder trigger
 # ----------------------------
-# These are intentionally simple so they can later be expanded into proper province/trait checks
+# This is a simple placeholder meant to be hooked into a more advanced animal lifecycle system later.
 
-vulturnia_animals_aging = {
+vulturnia_animals_old_age = {
 	value = 0
 	if = {
 		limit = { has_county_modifier = vulturnia_animal_influence }
