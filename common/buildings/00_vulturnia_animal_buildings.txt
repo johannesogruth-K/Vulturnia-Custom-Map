@@ -1,7 +1,8 @@
 # ==============================
-# Vulturnia Animal Influence Buildings
-# Aquis Religion - Restricted Buildings
+# Vulturnia Animal Buildings with Upgrade Layers
 # ==============================
+# This file adds 3-tier upgrade progression to all of the animal-related buildings added in this session.
+# Each building keeps its unique identity while gaining better capacity, Animal Influence, and gold output.
 
 building_vulturnia_breeding_grounds = {
 	type = temple
@@ -23,6 +24,7 @@ building_vulturnia_breeding_grounds = {
 		vulturnia_animal_fertility = 0.10
 		vulturnia_animal_influence = 0.5
 		fertility = 0.03
+		vulturnia_animal_capacity_limit = 20
 	}
 	
 	character_modifier = {
@@ -30,6 +32,71 @@ building_vulturnia_breeding_grounds = {
 	}
 	
 	description = "building_vulturnia_breeding_grounds_desc"
+	
+	upgrades = {
+		building_vulturnia_breeding_grounds_2 = {
+			gold_cost = 200
+			build_time = 365
+			province_modifier = {
+				vulturnia_animal_fertility = 0.20
+				vulturnia_animal_influence = 0.9
+				fertility = 0.06
+				vulturnia_animal_capacity_limit = 40
+			}
+			character_modifier = {
+				monthly_income = 0.60
+			}
+		}
+		building_vulturnia_breeding_grounds_3 = {
+			gold_cost = 350
+			build_time = 365
+			province_modifier = {
+				vulturnia_animal_fertility = 0.35
+				vulturnia_animal_influence = 1.4
+				fertility = 0.10
+				vulturnia_animal_capacity_limit = 60
+			}
+			character_modifier = {
+				monthly_income = 1.00
+			}
+		}
+	}
+}
+
+building_vulturnia_breeding_grounds_2 = {
+	type = temple
+	tier = 2
+	gold_cost = 200
+	build_time = 365
+	
+	province_modifier = {
+		vulturnia_animal_fertility = 0.20
+		vulturnia_animal_influence = 0.9
+		fertility = 0.06
+		vulturnia_animal_capacity_limit = 40
+	}
+	
+	character_modifier = {
+		monthly_income = 0.60
+	}
+}
+
+building_vulturnia_breeding_grounds_3 = {
+	type = temple
+	tier = 3
+	gold_cost = 350
+	build_time = 365
+	
+	province_modifier = {
+		vulturnia_animal_fertility = 0.35
+		vulturnia_animal_influence = 1.4
+		fertility = 0.10
+		vulturnia_animal_capacity_limit = 60
+	}
+	
+	character_modifier = {
+		monthly_income = 1.00
+	}
 }
 
 building_vulturnia_animal_hospitality = {
@@ -50,6 +117,7 @@ building_vulturnia_animal_hospitality = {
 	province_modifier = {
 		vulturnia_animal_life_expectancy = 0.05
 		vulturnia_animal_influence = 0.75
+		vulturnia_animal_capacity_limit = 20
 	}
 	
 	character_modifier = {
@@ -57,6 +125,63 @@ building_vulturnia_animal_hospitality = {
 	}
 	
 	description = "building_vulturnia_animal_hospitality_desc"
+	
+	upgrades = {
+		building_vulturnia_animal_hospitality_2 = {
+			gold_cost = 220
+			build_time = 365
+			province_modifier = {
+				vulturnia_animal_life_expectancy = 0.10
+				vulturnia_animal_influence = 1.2
+				vulturnia_animal_capacity_limit = 40
+			}
+			character_modifier = {
+				monthly_income = 0.75
+			}
+		}
+		building_vulturnia_animal_hospitality_3 = {
+			gold_cost = 380
+			build_time = 365
+			province_modifier = {
+				vulturnia_animal_life_expectancy = 0.15
+				vulturnia_animal_influence = 1.8
+				vulturnia_animal_capacity_limit = 60
+			}
+			character_modifier = {
+				monthly_income = 1.20
+			}
+		}
+	}
+}
+
+building_vulturnia_animal_hospitality_2 = {
+	type = temple
+	tier = 2
+	gold_cost = 220
+	build_time = 365
+	province_modifier = {
+		vulturnia_animal_life_expectancy = 0.10
+		vulturnia_animal_influence = 1.2
+		vulturnia_animal_capacity_limit = 40
+	}
+	character_modifier = {
+		monthly_income = 0.75
+	}
+}
+
+building_vulturnia_animal_hospitality_3 = {
+	type = temple
+	tier = 3
+	gold_cost = 380
+	build_time = 365
+	province_modifier = {
+		vulturnia_animal_life_expectancy = 0.15
+		vulturnia_animal_influence = 1.8
+		vulturnia_animal_capacity_limit = 60
+	}
+	character_modifier = {
+		monthly_income = 1.20
+	}
 }
 
 building_vulturnia_bear_wrestling_club = {
@@ -78,6 +203,7 @@ building_vulturnia_bear_wrestling_club = {
 		vulturnia_animal_warfare = 0.07
 		vulturnia_animal_influence = 0.05
 		vulturnia_animal_tax = 0.05
+		vulturnia_animal_capacity_limit = 20
 	}
 	
 	character_modifier = {
@@ -85,6 +211,67 @@ building_vulturnia_bear_wrestling_club = {
 	}
 	
 	description = "building_vulturnia_bear_wrestling_club_desc"
+	
+	upgrades = {
+		building_vulturnia_bear_wrestling_club_2 = {
+			gold_cost = 240
+			build_time = 365
+			province_modifier = {
+				vulturnia_animal_warfare = 0.12
+				vulturnia_animal_influence = 0.9
+				vulturnia_animal_tax = 0.10
+				vulturnia_animal_capacity_limit = 40
+			}
+			character_modifier = {
+				monthly_income = 0.50
+			}
+		}
+		building_vulturnia_bear_wrestling_club_3 = {
+			gold_cost = 420
+			build_time = 365
+			province_modifier = {
+				vulturnia_animal_warfare = 0.18
+				vulturnia_animal_influence = 1.5
+				vulturnia_animal_tax = 0.15
+				vulturnia_animal_capacity_limit = 60
+			}
+			character_modifier = {
+				monthly_income = 0.90
+			}
+		}
+	}
+}
+
+building_vulturnia_bear_wrestling_club_2 = {
+	type = temple
+	tier = 2
+	gold_cost = 240
+	build_time = 365
+	province_modifier = {
+		vulturnia_animal_warfare = 0.12
+		vulturnia_animal_influence = 0.9
+		vulturnia_animal_tax = 0.10
+		vulturnia_animal_capacity_limit = 40
+	}
+	character_modifier = {
+		monthly_income = 0.50
+	}
+}
+
+building_vulturnia_bear_wrestling_club_3 = {
+	type = temple
+	tier = 3
+	gold_cost = 420
+	build_time = 365
+	province_modifier = {
+		vulturnia_animal_warfare = 0.18
+		vulturnia_animal_influence = 1.5
+		vulturnia_animal_tax = 0.15
+		vulturnia_animal_capacity_limit = 60
+	}
+	character_modifier = {
+		monthly_income = 0.90
+	}
 }
 
 building_vulturnia_parrot_gold_mining = {
@@ -105,6 +292,7 @@ building_vulturnia_parrot_gold_mining = {
 	province_modifier = {
 		vulturnia_animal_influence = 0.2
 		development_growth = 0.01
+		vulturnia_animal_capacity_limit = 20
 	}
 	
 	character_modifier = {
@@ -112,6 +300,63 @@ building_vulturnia_parrot_gold_mining = {
 	}
 	
 	description = "building_vulturnia_parrot_gold_mining_desc"
+	
+	upgrades = {
+		building_vulturnia_parrot_gold_mining_2 = {
+			gold_cost = 260
+			build_time = 365
+			province_modifier = {
+				vulturnia_animal_influence = 0.6
+				development_growth = 0.03
+				vulturnia_animal_capacity_limit = 40
+			}
+			character_modifier = {
+				monthly_income = 0.85
+			}
+		}
+		building_vulturnia_parrot_gold_mining_3 = {
+			gold_cost = 430
+			build_time = 365
+			province_modifier = {
+				vulturnia_animal_influence = 1.0
+				development_growth = 0.05
+				vulturnia_animal_capacity_limit = 60
+			}
+			character_modifier = {
+				monthly_income = 1.40
+			}
+		}
+	}
+}
+
+building_vulturnia_parrot_gold_mining_2 = {
+	type = temple
+	tier = 2
+	gold_cost = 260
+	build_time = 365
+	province_modifier = {
+		vulturnia_animal_influence = 0.6
+		development_growth = 0.03
+		vulturnia_animal_capacity_limit = 40
+	}
+	character_modifier = {
+		monthly_income = 0.85
+	}
+}
+
+building_vulturnia_parrot_gold_mining_3 = {
+	type = temple
+	tier = 3
+	gold_cost = 430
+	build_time = 365
+	province_modifier = {
+		vulturnia_animal_influence = 1.0
+		development_growth = 0.05
+		vulturnia_animal_capacity_limit = 60
+	}
+	character_modifier = {
+		monthly_income = 1.40
+	}
 }
 
 building_vulturnia_monkey_tree_cutters = {
@@ -132,6 +377,7 @@ building_vulturnia_monkey_tree_cutters = {
 	province_modifier = {
 		vulturnia_animal_influence = 0.35
 		development_growth = 0.01
+		vulturnia_animal_capacity_limit = 20
 	}
 	
 	character_modifier = {
@@ -139,6 +385,63 @@ building_vulturnia_monkey_tree_cutters = {
 	}
 	
 	description = "building_vulturnia_monkey_tree_cutters_desc"
+	
+	upgrades = {
+		building_vulturnia_monkey_tree_cutters_2 = {
+			gold_cost = 210
+			build_time = 365
+			province_modifier = {
+				vulturnia_animal_influence = 0.75
+				development_growth = 0.03
+				vulturnia_animal_capacity_limit = 40
+			}
+			character_modifier = {
+				monthly_income = 0.80
+			}
+		}
+		building_vulturnia_monkey_tree_cutters_3 = {
+			gold_cost = 360
+			build_time = 365
+			province_modifier = {
+				vulturnia_animal_influence = 1.2
+				development_growth = 0.05
+				vulturnia_animal_capacity_limit = 60
+			}
+			character_modifier = {
+				monthly_income = 1.30
+			}
+		}
+	}
+}
+
+building_vulturnia_monkey_tree_cutters_2 = {
+	type = temple
+	tier = 2
+	gold_cost = 210
+	build_time = 365
+	province_modifier = {
+		vulturnia_animal_influence = 0.75
+		development_growth = 0.03
+		vulturnia_animal_capacity_limit = 40
+	}
+	character_modifier = {
+		monthly_income = 0.80
+	}
+}
+
+building_vulturnia_monkey_tree_cutters_3 = {
+	type = temple
+	tier = 3
+	gold_cost = 360
+	build_time = 365
+	province_modifier = {
+		vulturnia_animal_influence = 1.2
+		development_growth = 0.05
+		vulturnia_animal_capacity_limit = 60
+	}
+	character_modifier = {
+		monthly_income = 1.30
+	}
 }
 
 building_vulturnia_rhino_transport_service = {
@@ -159,6 +462,7 @@ building_vulturnia_rhino_transport_service = {
 	province_modifier = {
 		vulturnia_animal_influence = 0.5
 		vulturnia_animal_warfare = 0.01
+		vulturnia_animal_capacity_limit = 20
 	}
 	
 	character_modifier = {
@@ -167,6 +471,67 @@ building_vulturnia_rhino_transport_service = {
 	}
 	
 	description = "building_vulturnia_rhino_transport_service_desc"
+	
+	upgrades = {
+		building_vulturnia_rhino_transport_service_2 = {
+			gold_cost = 260
+			build_time = 365
+			province_modifier = {
+				vulturnia_animal_influence = 0.9
+				vulturnia_animal_warfare = 0.03
+				vulturnia_animal_capacity_limit = 40
+			}
+			character_modifier = {
+				army_movement_speed = 0.18
+				monthly_income = 0.35
+			}
+		}
+		building_vulturnia_rhino_transport_service_3 = {
+			gold_cost = 450
+			build_time = 365
+			province_modifier = {
+				vulturnia_animal_influence = 1.4
+				vulturnia_animal_warfare = 0.05
+				vulturnia_animal_capacity_limit = 60
+			}
+			character_modifier = {
+				army_movement_speed = 0.25
+				monthly_income = 0.60
+			}
+		}
+	}
+}
+
+building_vulturnia_rhino_transport_service_2 = {
+	type = temple
+	tier = 2
+	gold_cost = 260
+	build_time = 365
+	province_modifier = {
+		vulturnia_animal_influence = 0.9
+		vulturnia_animal_warfare = 0.03
+		vulturnia_animal_capacity_limit = 40
+	}
+	character_modifier = {
+		army_movement_speed = 0.18
+		monthly_income = 0.35
+	}
+}
+
+building_vulturnia_rhino_transport_service_3 = {
+	type = temple
+	tier = 3
+	gold_cost = 450
+	build_time = 365
+	province_modifier = {
+		vulturnia_animal_influence = 1.4
+		vulturnia_animal_warfare = 0.05
+		vulturnia_animal_capacity_limit = 60
+	}
+	character_modifier = {
+		army_movement_speed = 0.25
+		monthly_income = 0.60
+	}
 }
 
 building_vulturnia_lion_hunting_grounds = {
@@ -188,6 +553,7 @@ building_vulturnia_lion_hunting_grounds = {
 		vulturnia_animal_influence = 1.10
 		vulturnia_animal_warfare = 0.10
 		development_growth = 0.02
+		vulturnia_animal_capacity_limit = 20
 	}
 	
 	character_modifier = {
@@ -195,6 +561,67 @@ building_vulturnia_lion_hunting_grounds = {
 	}
 	
 	description = "building_vulturnia_lion_hunting_grounds_desc"
+	
+	upgrades = {
+		building_vulturnia_lion_hunting_grounds_2 = {
+			gold_cost = 340
+			build_time = 365
+			province_modifier = {
+				vulturnia_animal_influence = 1.8
+				vulturnia_animal_warfare = 0.18
+				development_growth = 0.04
+				vulturnia_animal_capacity_limit = 40
+			}
+			character_modifier = {
+				monthly_income = 1.10
+			}
+		}
+		building_vulturnia_lion_hunting_grounds_3 = {
+			gold_cost = 550
+			build_time = 365
+			province_modifier = {
+				vulturnia_animal_influence = 2.5
+				vulturnia_animal_warfare = 0.25
+				development_growth = 0.06
+				vulturnia_animal_capacity_limit = 60
+			}
+			character_modifier = {
+				monthly_income = 1.80
+			}
+		}
+	}
+}
+
+building_vulturnia_lion_hunting_grounds_2 = {
+	type = temple
+	tier = 2
+	gold_cost = 340
+	build_time = 365
+	province_modifier = {
+		vulturnia_animal_influence = 1.8
+		vulturnia_animal_warfare = 0.18
+		development_growth = 0.04
+		vulturnia_animal_capacity_limit = 40
+	}
+	character_modifier = {
+		monthly_income = 1.10
+	}
+}
+
+building_vulturnia_lion_hunting_grounds_3 = {
+	type = temple
+	tier = 3
+	gold_cost = 550
+	build_time = 365
+	province_modifier = {
+		vulturnia_animal_influence = 2.5
+		vulturnia_animal_warfare = 0.25
+		development_growth = 0.06
+		vulturnia_animal_capacity_limit = 60
+	}
+	character_modifier = {
+		monthly_income = 1.80
+	}
 }
 
 building_vulturnia_elephant_construction_crew = {
@@ -215,6 +642,7 @@ building_vulturnia_elephant_construction_crew = {
 	province_modifier = {
 		vulturnia_animal_influence = 0.5
 		vulturnia_animal_warfare = 0.05
+		vulturnia_animal_capacity_limit = 20
 	}
 	
 	character_modifier = {
@@ -223,6 +651,67 @@ building_vulturnia_elephant_construction_crew = {
 	}
 	
 	description = "building_vulturnia_elephant_construction_crew_desc"
+	
+	upgrades = {
+		building_vulturnia_elephant_construction_crew_2 = {
+			gold_cost = 180
+			build_time = 365
+			province_modifier = {
+				vulturnia_animal_influence = 1.0
+				vulturnia_animal_warfare = 0.10
+				vulturnia_animal_capacity_limit = 40
+			}
+			character_modifier = {
+				construction_cost_modifier = -0.05
+				monthly_income = 0.20
+			}
+		}
+		building_vulturnia_elephant_construction_crew_3 = {
+			gold_cost = 300
+			build_time = 365
+			province_modifier = {
+				vulturnia_animal_influence = 1.6
+				vulturnia_animal_warfare = 0.15
+				vulturnia_animal_capacity_limit = 60
+			}
+			character_modifier = {
+				construction_cost_modifier = -0.08
+				monthly_income = 0.45
+			}
+		}
+	}
+}
+
+building_vulturnia_elephant_construction_crew_2 = {
+	type = temple
+	tier = 2
+	gold_cost = 180
+	build_time = 365
+	province_modifier = {
+		vulturnia_animal_influence = 1.0
+		vulturnia_animal_warfare = 0.10
+		vulturnia_animal_capacity_limit = 40
+	}
+	character_modifier = {
+		construction_cost_modifier = -0.05
+		monthly_income = 0.20
+	}
+}
+
+building_vulturnia_elephant_construction_crew_3 = {
+	type = temple
+	tier = 3
+	gold_cost = 300
+	build_time = 365
+	province_modifier = {
+		vulturnia_animal_influence = 1.6
+		vulturnia_animal_warfare = 0.15
+		vulturnia_animal_capacity_limit = 60
+	}
+	character_modifier = {
+		construction_cost_modifier = -0.08
+		monthly_income = 0.45
+	}
 }
 
 building_vulturnia_crow_animal_university = {
@@ -243,6 +732,7 @@ building_vulturnia_crow_animal_university = {
 	province_modifier = {
 		vulturnia_animal_influence = 1.5
 		development_growth = 0.10
+		vulturnia_animal_capacity_limit = 20
 	}
 	
 	character_modifier = {
@@ -251,6 +741,67 @@ building_vulturnia_crow_animal_university = {
 	}
 	
 	description = "building_vulturnia_crow_animal_university_desc"
+	
+	upgrades = {
+		building_vulturnia_crow_animal_university_2 = {
+			gold_cost = 220
+			build_time = 365
+			province_modifier = {
+				vulturnia_animal_influence = 2.2
+				development_growth = 0.18
+				vulturnia_animal_capacity_limit = 40
+			}
+			character_modifier = {
+				education_growth = 0.10
+				monthly_income = 0.35
+			}
+		}
+		building_vulturnia_crow_animal_university_3 = {
+			gold_cost = 370
+			build_time = 365
+			province_modifier = {
+				vulturnia_animal_influence = 3.0
+				development_growth = 0.25
+				vulturnia_animal_capacity_limit = 60
+			}
+			character_modifier = {
+				education_growth = 0.15
+				monthly_income = 0.60
+			}
+		}
+	}
+}
+
+building_vulturnia_crow_animal_university_2 = {
+	type = temple
+	tier = 2
+	gold_cost = 220
+	build_time = 365
+	province_modifier = {
+		vulturnia_animal_influence = 2.2
+		development_growth = 0.18
+		vulturnia_animal_capacity_limit = 40
+	}
+	character_modifier = {
+		education_growth = 0.10
+		monthly_income = 0.35
+	}
+}
+
+building_vulturnia_crow_animal_university_3 = {
+	type = temple
+	tier = 3
+	gold_cost = 370
+	build_time = 365
+	province_modifier = {
+		vulturnia_animal_influence = 3.0
+		development_growth = 0.25
+		vulturnia_animal_capacity_limit = 60
+	}
+	character_modifier = {
+		education_growth = 0.15
+		monthly_income = 0.60
+	}
 }
 
 building_vulturnia_wolf_community = {
@@ -271,6 +822,7 @@ building_vulturnia_wolf_community = {
 	province_modifier = {
 		vulturnia_animal_influence = 0.50
 		vulturnia_animal_warfare = 0.05
+		vulturnia_animal_capacity_limit = 20
 	}
 	
 	character_modifier = {
@@ -279,31 +831,142 @@ building_vulturnia_wolf_community = {
 	}
 	
 	description = "building_vulturnia_wolf_community_desc"
+	
+	upgrades = {
+		building_vulturnia_wolf_community_2 = {
+			gold_cost = 180
+			build_time = 365
+			province_modifier = {
+				vulturnia_animal_influence = 0.9
+				vulturnia_animal_warfare = 0.10
+				vulturnia_animal_capacity_limit = 40
+			}
+			character_modifier = {
+				monthly_income = 0.25
+				host_scheme_resistance = 0.18
+			}
+		}
+		building_vulturnia_wolf_community_3 = {
+			gold_cost = 320
+			build_time = 365
+			province_modifier = {
+				vulturnia_animal_influence = 1.4
+				vulturnia_animal_warfare = 0.15
+				vulturnia_animal_capacity_limit = 60
+			}
+			character_modifier = {
+				monthly_income = 0.45
+				host_scheme_resistance = 0.25
+			}
+		}
+	}
 }
 
-building_vulturnia_animal_holding = {
+building_vulturnia_wolf_community_2 = {
+	type = temple
+	tier = 2
+	gold_cost = 180
+	build_time = 365
+	province_modifier = {
+		vulturnia_animal_influence = 0.9
+		vulturnia_animal_warfare = 0.10
+		vulturnia_animal_capacity_limit = 40
+	}
+	character_modifier = {
+		monthly_income = 0.25
+		host_scheme_resistance = 0.18
+	}
+}
+
+building_vulturnia_wolf_community_3 = {
+	type = temple
+	tier = 3
+	gold_cost = 320
+	build_time = 365
+	province_modifier = {
+		vulturnia_animal_influence = 1.4
+		vulturnia_animal_warfare = 0.15
+		vulturnia_animal_capacity_limit = 60
+	}
+	character_modifier = {
+		monthly_income = 0.45
+		host_scheme_resistance = 0.25
+	}
+}
+
+building_vulturnia_capacity_tier_1 = {
 	type = temple
 	tier = 1
-	gold_cost = 450
-	build_time = 365
+	gold_cost = 50
+	build_time = 180
 	
 	requirements = {
 		building_requirement_aquis_faith = {
 			religion = aquis
 		}
-		building_requirement_aquis_animal_only = {
-			religion = aquis
-		}
 	}
 	
 	province_modifier = {
-		vulturnia_animal_influence = 1.5
-		development_growth = 0.05
+		vulturnia_animal_capacity_limit = 20
+		vulturnia_animal_influence = 0.3
 	}
 	
 	character_modifier = {
 		monthly_income = 0.25
 	}
 	
-	description = "building_vulturnia_animal_holding_desc"
+	description = "building_vulturnia_capacity_tier_1_desc"
+	
+	upgrades = {
+		building_vulturnia_capacity_tier_2 = {
+			gold_cost = 100
+			build_time = 270
+			province_modifier = {
+				vulturnia_animal_capacity_limit = 40
+				vulturnia_animal_influence = 0.6
+			}
+			character_modifier = {
+				monthly_income = 0.50
+			}
+		}
+		building_vulturnia_capacity_tier_3 = {
+			gold_cost = 180
+			build_time = 365
+			province_modifier = {
+				vulturnia_animal_capacity_limit = 60
+				vulturnia_animal_influence = 1.0
+			}
+			character_modifier = {
+				monthly_income = 0.90
+			}
+		}
+	}
+}
+
+building_vulturnia_capacity_tier_2 = {
+	type = temple
+	tier = 2
+	gold_cost = 100
+	build_time = 270
+	province_modifier = {
+		vulturnia_animal_capacity_limit = 40
+		vulturnia_animal_influence = 0.6
+	}
+	character_modifier = {
+		monthly_income = 0.50
+	}
+}
+
+building_vulturnia_capacity_tier_3 = {
+	type = temple
+	tier = 3
+	gold_cost = 180
+	build_time = 365
+	province_modifier = {
+		vulturnia_animal_capacity_limit = 60
+		vulturnia_animal_influence = 1.0
+	}
+	character_modifier = {
+		monthly_income = 0.90
+	}
 }
