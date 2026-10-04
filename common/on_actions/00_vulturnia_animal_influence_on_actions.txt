@@ -1,0 +1,22 @@
+# ==============================
+# Vulturnia Animal Influence On-Actions
+# ==============================
+# These on-actions trigger events and effects related to Animal Influence
+
+on_aquis_faith_conversion = {
+	on_action_type = on_faith_conversion
+	
+	# When someone converts to Aquis faith, grant them initial Animal Influence
+	trigger = {
+		religion = aquis
+	}
+}
+
+on_character_monthly_aquis = {
+	on_action_type = on_character_monthly
+	
+	# Monthly checks for Aquis-specific Animal Influence events
+	trigger = {
+		religion = aquis
+	}
+}

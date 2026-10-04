@@ -1,0 +1,65 @@
+l_english:
+  # ==============================
+  # Modifiers Localization
+  # ==============================
+  vulturnia_animal_influence: "Animal Influence"
+  vulturnia_animal_influence_desc: "A measure of how deeply the Aquis religion has shaped the province's relationship with the natural world."
+  
+  vulturnia_animal_fertility: "Animal Fertility"
+  vulturnia_animal_fertility_desc: "The fertility and productivity of local animal life."
+  
+  vulturnia_animal_life_expectancy: "Animal Life Expectancy"
+  vulturnia_animal_life_expectancy_desc: "The expected lifespan and health of animals in this province."
+  
+  vulturnia_animal_warfare: "Animal Warfare"
+  vulturnia_animal_warfare_desc: "The military strength and efficiency of trained animals."
+  
+  vulturnia_animal_tax: "Animal Tax"
+  vulturnia_animal_tax_desc: "Revenue generated from animal-related trade and regulation."
+  
+  vulturnia_animal_power: "Animal Power"
+  vulturnia_animal_power_desc: "Legacy name for the province's animal influence."
+
+  # ==============================
+  # Building Localization
+  # ==============================
+  building_vulturnia_breeding_grounds: "Breeding Grounds"
+  building_vulturnia_breeding_grounds_desc: "A dedicated area for breeding exceptional animals. The Aquis faith sees animal husbandry as sacred work.\n\n+10% Fertility\n+0.35 Gold/Month\n+0.5 Animal Influence\n\nCost: 125 Gold, 365 days to build"
+  
+  building_vulturnia_animal_hospitality: "Animal Hospitality"
+  building_vulturnia_animal_hospitality_desc: "A sanctuary dedicated to the care and healing of animals. Followers of Aquis believe healthy animals bring prosperity.\n\n+5 Animal Life Expectancy\n+0.75 Animal Influence\n+0.40 Gold/Month\n\nCost: 135 Gold, 365 days to build"
+  
+  building_vulturnia_bear_wrestling_club: "Bear Wrestling Club"
+  building_vulturnia_bear_wrestling_club_desc: "An arena where brave warriors test their strength against bears. A tradition sacred to Aquis warriors.\n\n+7% Animal Warfare\n+5% Animal Influence\n+5% County Tax\n+0.25 Gold/Month\n\nCost: 130 Gold, 365 days to build"
+  
+  building_vulturnia_parrot_gold_mining: "Parrot Gold Mining"
+  building_vulturnia_parrot_gold_mining_desc: "Trained parrots aid in locating precious metals. An unconventional but effective method favored by Aquis miners.\n\n+0.50 Gold/Month\n+0.2 Animal Influence\n+1% Development\n\nCost: 155 Gold, 365 days to build"
+  
+  building_vulturnia_monkey_tree_cutters: "Monkey Tree-Cutters"
+  building_vulturnia_monkey_tree_cutters_desc: "Agile monkeys harvest timber with remarkable efficiency. A hallmark of Aquis ingenuity.\n\n+0.50 Gold/Month\n+0.35 Animal Influence\n+1% Development\n\nCost: 110 Gold, 365 days to build"
+  
+  building_vulturnia_rhino_transport_service: "Rhino Transportation Service"
+  building_vulturnia_rhino_transport_service_desc: "A network of rhinoceros-drawn carriages transports goods and people swiftly across the realm.\n\n+10% Army Movement Speed\n+0.50 Animal Influence\n+1% Animal Warfare\n+0.15 Gold/Month\n\nCost: 140 Gold, 365 days to build"
+  
+  building_vulturnia_lion_hunting_grounds: "Lion Hunting Grounds"
+  building_vulturnia_lion_hunting_grounds_desc: "A dangerous but prestigious training ground for warriors hunting lions. Only the greatest hunters survive to tell the tale.\n\n+1.10 Animal Influence\n+10% Animal Warfare\n+0.75 Gold/Month\n+2% Development\n\nCost: 200 Gold, 365 days to build"
+  
+  building_vulturnia_elephant_construction_crew: "Elephant Construction Crew"
+  building_vulturnia_elephant_construction_crew_desc: "Massive elephants hauling materials dramatically speed up construction work across your holdings.\n\n-2% Construction Cost\n+0.5 Animal Influence\n+5% Animal Warfare\n+0.05 Gold/Month\n\nCost: 75 Gold, 365 days to build"
+  
+  building_vulturnia_crow_animal_university: "Crow-Led Animal University"
+  building_vulturnia_crow_animal_university_desc: "A place of learning where the wisdom of animals is studied and taught. The Aquis consider this sacred knowledge.\n\n+1.5 Animal Influence\n+1 Prowess to Animals\n+5% Education Growth\n+0.15 Gold/Month\n+10% Development\n\nCost: 100 Gold, 365 days to build"
+  
+  building_vulturnia_wolf_community: "Investments into Wolf Community"
+  building_vulturnia_wolf_community_desc: "Support for wild wolf packs strengthens the bond between civilization and nature. An Aquis spiritual practice.\n\n+0.50 Animal Influence\n+5% Animal Warfare\n+0.10 Gold/Month\n+10% Scheme Resistance\n\nCost: 75 Gold, 365 days to build"
+  
+  building_vulturnia_animal_holding: "Animal Holding"
+  building_vulturnia_animal_holding_desc: "A vast complex dedicated entirely to animal management. Only Aquis followers may construct such a sacred facility.\n\n+1.5 Animal Influence\n+0.25 Gold/Month\n+5% Development\n\nCost: 450 Gold, 365 days to build (Only allowed in animal buildings)"
+
+  # ==============================
+  # Building Requirements Localization
+  # ==============================
+  building_requirement_aquis_faith: "Requires Aquis Religion"
+  building_requirement_aquis_faith_desc: "This sacred building can only be constructed by followers of the Aquis faith."
+  building_requirement_aquis_faith_requirement: "The ruler must follow the Aquis faith"
+  building_requirement_aquis_faith_failure: "Only followers of the Aquis religion may construct Animal Influence buildings"

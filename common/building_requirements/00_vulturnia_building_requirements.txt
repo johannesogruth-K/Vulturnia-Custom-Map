@@ -1,0 +1,18 @@
+# ==============================
+# Vulturnia Building Requirements
+# ==============================
+
+building_requirement_aquis_faith = {
+	name = building_requirement_aquis_faith
+	description = building_requirement_aquis_faith_desc
+	
+	requirement = {
+		trigger = {
+			religion = aquis
+		}
+	}
+	
+	requirement_desc = building_requirement_aquis_faith_requirement
+	
+	failure_desc = building_requirement_aquis_faith_failure
+}

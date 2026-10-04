@@ -1,0 +1,9 @@
+l_english:
+  # ==============================
+  # Trait Localization
+  # ==============================
+  aquis_animal_champion: "Aquis Animal Champion"
+  aquis_animal_champion_desc: "This character has proven themselves as a master of animal warfare and Aquis traditions."
+  
+  aquis_animal_trainer: "Aquis Animal Trainer"
+  aquis_animal_trainer_desc: "This character has dedicated their life to training and understanding animals in the Aquis tradition."

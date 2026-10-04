@@ -1,0 +1,30 @@
+# ==============================
+# Vulturnia Animal Influence Script Values
+# ==============================
+
+# Base animal influence value for calculations
+vulturnia_get_animal_influence = {
+	value = 0
+	if = {
+		limit = { religion = aquis }
+		add = 10
+	}
+}
+
+# Upkeep cost for animal holdings
+vulturnia_animal_upkeep_cost = {
+	value = 5
+	if = {
+		limit = { has_province_modifier = vulturnia_animal_holding }
+		add = 3
+	}
+}
+
+# Check if province can build animal buildings
+vulturnia_can_build_animal_buildings = {
+	value = 0
+	if = {
+		limit = { religion = aquis }
+		add = 1
+	}
+}

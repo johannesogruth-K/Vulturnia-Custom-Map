@@ -1,0 +1,30 @@
+# ==============================
+# Vulturnia Animal Influence UI
+# Character State Window Override
+# ==============================
+# This file extends the character state window to display Animal Influence
+# alongside other resources like Gold, Prestige, and Piety.
+
+# NOTE: This is a simplified placeholder. Full GUI implementation requires:
+# 1. Creating custom GUI files in gui/vulturnia/
+# 2. Using proper GUI syntax for CK3 1.20.0.3
+# 3. Hooking into existing window layouts
+# 4. Adding text_instance and icon references
+
+# For full implementation, you'll need to:
+# - Create a custom GUI template for the Animal Influence display
+# - Hook it into the character panel or realm view
+# - Use proper CK3 GUI code with localizable text and dynamic values
+
+# Example of what would go in a custom GUI file:
+# container = {
+#    name = "animal_influence_display"
+#    position = { 100 100 }
+#    size = { 200 50 }
+#    
+#    text_instance = {
+#        name = "animal_influence_label"
+#        text = "[Character.GetVariable(\"animal_influence\")]"
+#        position = { 10 10 }
+#    }
+# }

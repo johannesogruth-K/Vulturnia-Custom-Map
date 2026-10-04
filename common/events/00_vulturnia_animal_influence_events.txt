@@ -1,0 +1,59 @@
+# ==============================
+# Vulturnia Animal Influence Events
+# ==============================
+# Events triggered by Animal Influence buildings and mechanics
+
+namespace = vulturnia_animal
+
+# Event: Welcome to Aquis
+event = {
+	id = vulturnia_animal.0001
+	title = vulturnia_animal.0001.t
+	description = vulturnia_animal.0001.desc
+	picture = "gfx/events/character_interactions/banquet.dds"
+
+	trigger = {
+		religion = aquis
+		realm_size > 0
+	}
+
+	immediate = {
+		# Award initial Animal Influence bonus
+	}
+
+	option = {
+		name = vulturnia_animal.0001.a
+		add_prestige = 50
+	}
+}
+
+# Event: Lion Hunt Success
+event = {
+	id = vulturnia_animal.0002
+	title = vulturnia_animal.0002.t
+	description = vulturnia_animal.0002.desc
+	picture = "gfx/events/character_interactions/hunt.dds"
+
+	trigger = {
+		religion = aquis
+		any_held_title = {
+			has_holding_type = temple
+			holding = { has_building = building_vulturnia_lion_hunting_grounds }
+		}
+	}
+
+	immediate = {
+		# Success in hunting provides prestige and martial experience
+	}
+
+	option = {
+		name = vulturnia_animal.0002.a
+		add_prestige = 100
+		add_martial_lifestyle_xp = 50
+	}
+
+	option = {
+		name = vulturnia_animal.0002.b
+		add_gold = 75
+	}
+}

@@ -1,0 +1,33 @@
+# ==============================
+# Vulturnia Animal Influence Modifiers
+# ==============================
+
+vulturnia_animal_influence = {
+	icon = "gfx/interface/icons/modifiers/modifier_animal_influence.dds"
+	description = "vulturnia_animal_influence_desc"
+}
+
+vulturnia_animal_fertility = {
+	icon = "gfx/interface/icons/modifiers/modifier_animal_fertility.dds"
+	fertility = 0.01
+}
+
+vulturnia_animal_life_expectancy = {
+	icon = "gfx/interface/icons/modifiers/modifier_animal_life_expectancy.dds"
+	health = 0.01
+}
+
+vulturnia_animal_warfare = {
+	icon = "gfx/interface/icons/modifiers/modifier_animal_warfare.dds"
+	martial = 0.01
+}
+
+vulturnia_animal_tax = {
+	icon = "gfx/interface/icons/modifiers/modifier_animal_tax.dds"
+	county_tax_modifier = 0.01
+}
+
+vulturnia_animal_power = {
+	icon = "gfx/interface/icons/modifiers/modifier_animal_power.dds"
+	monthly_income = 0.01
+}

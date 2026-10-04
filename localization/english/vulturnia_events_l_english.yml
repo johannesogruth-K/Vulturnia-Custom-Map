@@ -1,0 +1,12 @@
+l_english:
+  # ==============================
+  # Event Localization
+  # ==============================
+  vulturnia_animal.0001.t: "Welcome to the Aquis Faith"
+  vulturnia_animal.0001.desc: "You have joined the Aquis faith, a sacred tradition devoted to the mastery and understanding of animals. The path ahead is one of harmony with nature's beasts."
+  vulturnia_animal.0001.a: "I will honor the animals and build great holdings!"
+  
+  vulturnia_animal.0002.t: "A Successful Lion Hunt"
+  vulturnia_animal.0002.desc: "Your hunters have returned from the Lion Hunting Grounds with tales of their victory. A magnificent beast has been brought down, and your warriors are emboldened by the triumph."
+  vulturnia_animal.0002.a: "Celebrate the hunters with prestige!"
+  vulturnia_animal.0002.b: "Sell the lion's parts for profit."

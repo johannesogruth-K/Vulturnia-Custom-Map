@@ -1,0 +1,276 @@
+# ==============================
+# Vulturnia - Animal Influence Buildings
+# Aquis Religion - Restricted Buildings
+# ==============================
+
+building_vulturnia_breeding_grounds = {
+	type = temple
+	tier = 1
+	gold_cost = 125
+	build_time = 365
+	requires_innovation = innovation_animal_husbandry
+	
+	requirements = {
+		building_requirement_aquis_faith = {
+			religion = aquis
+		}
+	}
+	
+	province_modifier = {
+		vulturnia_animal_fertility = 0.10
+		vulturnia_animal_influence = 0.5
+		fertility = 0.03
+	}
+	
+	character_modifier = {
+		monthly_income = 0.35
+	}
+	
+	description = "building_vulturnia_breeding_grounds_desc"
+}
+
+building_vulturnia_animal_hospitality = {
+	type = temple
+	tier = 1
+	gold_cost = 135
+	build_time = 365
+	
+	requirements = {
+		building_requirement_aquis_faith = {
+			religion = aquis
+		}
+	}
+	
+	province_modifier = {
+		vulturnia_animal_life_expectancy = 0.05
+		vulturnia_animal_influence = 0.75
+	}
+	
+	character_modifier = {
+		monthly_income = 0.40
+	}
+	
+	description = "building_vulturnia_animal_hospitality_desc"
+}
+
+building_vulturnia_bear_wrestling_club = {
+	type = temple
+	tier = 1
+	gold_cost = 130
+	build_time = 365
+	
+	requirements = {
+		building_requirement_aquis_faith = {
+			religion = aquis
+		}
+	}
+	
+	province_modifier = {
+		vulturnia_animal_warfare = 0.07
+		vulturnia_animal_influence = 0.05
+		vulturnia_animal_tax = 0.05
+	}
+	
+	character_modifier = {
+		monthly_income = 0.25
+	}
+	
+	description = "building_vulturnia_bear_wrestling_club_desc"
+}
+
+building_vulturnia_parrot_gold_mining = {
+	type = temple
+	tier = 1
+	gold_cost = 155
+	build_time = 365
+	
+	requirements = {
+		building_requirement_aquis_faith = {
+			religion = aquis
+		}
+	}
+	
+	province_modifier = {
+		vulturnia_animal_influence = 0.2
+		development_growth = 0.01
+	}
+	
+	character_modifier = {
+		monthly_income = 0.50
+	}
+	
+	description = "building_vulturnia_parrot_gold_mining_desc"
+}
+
+building_vulturnia_monkey_tree_cutters = {
+	type = temple
+	tier = 1
+	gold_cost = 110
+	build_time = 365
+	
+	requirements = {
+		building_requirement_aquis_faith = {
+			religion = aquis
+		}
+	}
+	
+	province_modifier = {
+		vulturnia_animal_influence = 0.35
+		development_growth = 0.01
+	}
+	
+	character_modifier = {
+		monthly_income = 0.50
+	}
+	
+	description = "building_vulturnia_monkey_tree_cutters_desc"
+}
+
+building_vulturnia_rhino_transport_service = {
+	type = temple
+	tier = 1
+	gold_cost = 140
+	build_time = 365
+	
+	requirements = {
+		building_requirement_aquis_faith = {
+			religion = aquis
+		}
+	}
+	
+	province_modifier = {
+		vulturnia_animal_influence = 0.5
+		vulturnia_animal_warfare = 0.01
+	}
+	
+	character_modifier = {
+		army_movement_speed = 0.10
+		monthly_income = 0.15
+	}
+	
+	description = "building_vulturnia_rhino_transport_service_desc"
+}
+
+building_vulturnia_lion_hunting_grounds = {
+	type = temple
+	tier = 1
+	gold_cost = 200
+	build_time = 365
+	
+	requirements = {
+		building_requirement_aquis_faith = {
+			religion = aquis
+		}
+	}
+	
+	province_modifier = {
+		vulturnia_animal_influence = 1.10
+		vulturnia_animal_warfare = 0.10
+		development_growth = 0.02
+	}
+	
+	character_modifier = {
+		monthly_income = 0.75
+	}
+	
+	description = "building_vulturnia_lion_hunting_grounds_desc"
+}
+
+building_vulturnia_elephant_construction_crew = {
+	type = temple
+	tier = 1
+	gold_cost = 75
+	build_time = 365
+	
+	requirements = {
+		building_requirement_aquis_faith = {
+			religion = aquis
+		}
+	}
+	
+	province_modifier = {
+		vulturnia_animal_influence = 0.5
+		vulturnia_animal_warfare = 0.05
+	}
+	
+	character_modifier = {
+		construction_cost_modifier = -0.02
+		monthly_income = 0.05
+	}
+	
+	description = "building_vulturnia_elephant_construction_crew_desc"
+}
+
+building_vulturnia_crow_animal_university = {
+	type = temple
+	tier = 1
+	gold_cost = 100
+	build_time = 365
+	
+	requirements = {
+		building_requirement_aquis_faith = {
+			religion = aquis
+		}
+	}
+	
+	province_modifier = {
+		vulturnia_animal_influence = 1.5
+		development_growth = 0.10
+	}
+	
+	character_modifier = {
+		education_growth = 0.05
+		monthly_income = 0.15
+	}
+	
+	description = "building_vulturnia_crow_animal_university_desc"
+}
+
+building_vulturnia_wolf_community = {
+	type = temple
+	tier = 1
+	gold_cost = 75
+	build_time = 365
+	
+	requirements = {
+		building_requirement_aquis_faith = {
+			religion = aquis
+		}
+	}
+	
+	province_modifier = {
+		vulturnia_animal_influence = 0.50
+		vulturnia_animal_warfare = 0.05
+	}
+	
+	character_modifier = {
+		monthly_income = 0.10
+		host_scheme_resistance = 0.10
+	}
+	
+	description = "building_vulturnia_wolf_community_desc"
+}
+
+building_vulturnia_animal_holding = {
+	type = temple
+	tier = 1
+	gold_cost = 450
+	build_time = 365
+	
+	requirements = {
+		building_requirement_aquis_faith = {
+			religion = aquis
+		}
+	}
+	
+	province_modifier = {
+		vulturnia_animal_influence = 1.5
+		development_growth = 0.05
+	}
+	
+	character_modifier = {
+		monthly_income = 0.25
+	}
+	
+	description = "building_vulturnia_animal_holding_desc"
+}

@@ -1,0 +1,31 @@
+# ==============================
+# Vulturnia Animal Influence Traits
+# ==============================
+# Traits related to the Aquis faith and Animal Influence
+
+aquis_animal_champion = {
+	displayname = "aquis_animal_champion"
+	description = "aquis_animal_champion_desc"
+	category = personality
+	common = no
+	ghostrate = 0.5
+
+	character_modifier = {
+		vulturnia_animal_influence = 0.25
+		martial = 2
+		army_damage_mult = 0.05
+	}
+}
+
+aquis_animal_trainer = {
+	displayname = "aquis_animal_trainer"
+	description = "aquis_animal_trainer_desc"
+	category = personality
+	common = no
+	ghostrate = 0.3
+
+	character_modifier = {
+		vulturnia_animal_influence = 0.15
+		stewardship = 1
+	}
+}
