@@ -1,0 +1,101 @@
+# ==============================
+# Vulturnia Animal Capacity System
+# ==============================
+# Design goal:
+# - Each animal type has a capacity value
+# - Smaller animals require more animals to fill the same capacity than larger animals
+# - When a province is above capacity, Animal Influence gain is reduced
+# - Capacity is separate from gold and autonomy, but it interacts with them
+
+# ----------------------------
+# Base capacity rules
+# ----------------------------
+
+vulturnia_animal_capacity_base = {
+	value = 100
+}
+
+# This is a simple capacity-per-species scaling model.
+# Smaller animals are less efficient per animal, so they consume more "space" in the same capacity.
+# Bigger animals occupy more space in raw capacity, but are more efficient per unit.
+
+vulturnia_animal_capacity_crow = {
+	value = 1
+}
+
+vulturnia_animal_capacity_wolf = {
+	value = 4
+}
+
+vulturnia_animal_capacity_lion = {
+	value = 8
+}
+
+vulturnia_animal_capacity_rhino = {
+	value = 12
+}
+
+vulturnia_animal_capacity_elephant = {
+	value = 18
+}
+
+# ----------------------------
+# Capacity fill logic
+# ----------------------------
+# This is a design layer only; it can later be converted into province-state checks.
+
+vulturnia_animal_capacity_fill = {
+	value = 0
+	if = {
+		limit = { has_county_modifier = vulturnia_animal_influence }
+		add = 50
+	}
+}
+
+# ----------------------------
+# Over-capacity penalty
+# ----------------------------
+# If total animal usage exceeds capacity, the province loses Animal Influence gain efficiency.
+
+vulturnia_animal_capacity_overflow = {
+	value = 0
+	if = {
+		limit = { has_county_modifier = vulturnia_animal_influence }
+		add = 1
+	}
+}
+
+vulturnia_animal_influence_gain_penalty = {
+	value = 0
+	if = {
+		limit = { has_county_modifier = vulturnia_animal_influence }
+		add = -0.25
+	}
+}
+
+# ----------------------------
+# Animal efficiency model
+# ----------------------------
+# This makes the intended behavior explicit:
+# - small animals need many more individuals to generate the same effect
+# - large animals are more efficient per unit, but each takes more capacity slot
+
+vulturnia_animal_efficiency_crow = {
+	value = 0.1
+}
+
+vulturnia_animal_efficiency_wolf = {
+	value = 0.25
+}
+
+vulturnia_animal_efficiency_lion = {
+	value = 0.45
+}
+
+vulturnia_animal_efficiency_rhino = {
+	value = 0.65
+}
+
+vulturnia_animal_efficiency_elephant = {
+	value = 0.90
+}

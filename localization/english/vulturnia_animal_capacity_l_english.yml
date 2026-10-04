@@ -1,0 +1,45 @@
+l_english:
+  # ==============================
+  # Animal capacity localization
+  # ==============================
+  vulturnia_animal_capacity_limit: "Animal Capacity"
+  vulturnia_animal_capacity_limit_desc: "The total number of animals this province can support sustainably. Smaller animals consume comparatively more capacity to make up for their lower individual impact."
+
+  vulturnia_animal_over_capacity: "Over Capacity"
+  vulturnia_animal_over_capacity_desc: "Your animal population has exceeded the holding's sustainable capacity. Reduced Animal Influence gain and inefficiency follow."
+
+  vulturnia_animal_capacity_optimized: "Capacity Optimized"
+  vulturnia_animal_capacity_optimized_desc: "Your animal composition is balanced and efficient, maximizing Animal Influence gain."
+
+  vulturnia_animal_capacity_base: "Animal Capacity Base"
+  vulturnia_animal_capacity_base_desc: "The baseline holding capacity for animal populations."
+
+  vulturnia_animal_capacity_crow: "Crow Capacity"
+  vulturnia_animal_capacity_crow_desc: "Crow flocks are tiny individually, but many are needed to make the same impact as a larger animal."
+
+  vulturnia_animal_capacity_wolf: "Wolf Capacity"
+  vulturnia_animal_capacity_wolf_desc: "Wolves are efficient at moderate scale and fit well in a balanced herd."
+
+  vulturnia_animal_capacity_lion: "Lion Capacity"
+  vulturnia_animal_capacity_lion_desc: "Lions require significantly more room and management than smaller species."
+
+  vulturnia_animal_capacity_rhino: "Rhino Capacity"
+  vulturnia_animal_capacity_rhino_desc: "Rhinos are large and impactful, but they require substantial space in the animal holding."
+
+  vulturnia_animal_capacity_elephant: "Elephant Capacity"
+  vulturnia_animal_capacity_elephant_desc: "Elephants are the largest and most efficient major animal asset. They occupy the most space but create the strongest impact."
+
+  vulturnia_animal_efficiency_crow: "Crow Efficiency"
+  vulturnia_animal_efficiency_crow_desc: "Crows are numerically efficient, but are weak individually and need large numbers to matter."
+
+  vulturnia_animal_efficiency_wolf: "Wolf Efficiency"
+  vulturnia_animal_efficiency_wolf_desc: "Wolves are efficient and adaptable, with a comparatively good impact-to-space ratio."
+
+  vulturnia_animal_efficiency_lion: "Lion Efficiency"
+  vulturnia_animal_efficiency_lion_desc: "Lions are powerful and efficient, but they require a larger holding footprint."
+
+  vulturnia_animal_efficiency_rhino: "Rhino Efficiency"
+  vulturnia_animal_efficiency_rhino_desc: "Rhinos are bulky but highly effective."
+
+  vulturnia_animal_efficiency_elephant: "Elephant Efficiency"
+  vulturnia_animal_efficiency_elephant_desc: "Elephants are the most impactful, but they also use the most capacity."

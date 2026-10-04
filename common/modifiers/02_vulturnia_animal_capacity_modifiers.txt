@@ -1,0 +1,23 @@
+# ==============================
+# Vulturnia Animal Capacity Modifiers
+# ==============================
+
+vulturnia_animal_capacity_limit = {
+	icon = "gfx/interface/icons/modifiers/modifier_animal_capacity.dds"
+	description = "vulturnia_animal_capacity_limit_desc"
+	monthly_income = 0.05
+}
+
+vulturnia_animal_over_capacity = {
+	icon = "gfx/interface/icons/modifiers/modifier_animal_over_capacity.dds"
+	description = "vulturnia_animal_over_capacity_desc"
+	county_tax_modifier = -0.05
+	vulturnia_animal_influence = -0.25
+}
+
+vulturnia_animal_capacity_optimized = {
+	icon = "gfx/interface/icons/modifiers/modifier_animal_capacity_optimized.dds"
+	description = "vulturnia_animal_capacity_optimized_desc"
+	vulturnia_animal_influence = 0.25
+	monthly_income = 0.10
+}

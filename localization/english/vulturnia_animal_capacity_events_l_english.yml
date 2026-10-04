@@ -1,0 +1,8 @@
+l_english:
+  vulturnia_animal_capacity.0001.t: "Animal Population Over Capacity"
+  vulturnia_animal_capacity.0001.desc: "Your animal holding is over capacity. Too many creatures are packed into a space that cannot support them efficiently, and their contribution to Animal Influence begins to suffer."
+  vulturnia_animal_capacity.0001.a: "Reduce the flock and restore balance."
+
+  vulturnia_animal_capacity.0002.t: "Balanced Animal Capacity"
+  vulturnia_animal_capacity.0002.desc: "Your animal population is now appropriately balanced. Their capacity usage is efficient, and Animal Influence growth is returning to its expected rate."
+  vulturnia_animal_capacity.0002.a: "Excellent. Keep them organized."
