@@ -1,5 +1,5 @@
 # ==============================
-# Vulturnia - Animal Influence Buildings
+# Vulturnia Animal Influence Buildings
 # Aquis Religion - Restricted Buildings
 # ==============================
 
@@ -12,6 +12,9 @@ building_vulturnia_breeding_grounds = {
 	
 	requirements = {
 		building_requirement_aquis_faith = {
+			religion = aquis
+		}
+		building_requirement_aquis_animal_only = {
 			religion = aquis
 		}
 	}
@@ -39,6 +42,9 @@ building_vulturnia_animal_hospitality = {
 		building_requirement_aquis_faith = {
 			religion = aquis
 		}
+		building_requirement_aquis_animal_only = {
+			religion = aquis
+		}
 	}
 	
 	province_modifier = {
@@ -61,6 +67,9 @@ building_vulturnia_bear_wrestling_club = {
 	
 	requirements = {
 		building_requirement_aquis_faith = {
+			religion = aquis
+		}
+		building_requirement_aquis_animal_only = {
 			religion = aquis
 		}
 	}
@@ -88,6 +97,9 @@ building_vulturnia_parrot_gold_mining = {
 		building_requirement_aquis_faith = {
 			religion = aquis
 		}
+		building_requirement_aquis_animal_only = {
+			religion = aquis
+		}
 	}
 	
 	province_modifier = {
@@ -112,6 +124,9 @@ building_vulturnia_monkey_tree_cutters = {
 		building_requirement_aquis_faith = {
 			religion = aquis
 		}
+		building_requirement_aquis_animal_only = {
+			religion = aquis
+		}
 	}
 	
 	province_modifier = {
@@ -134,6 +149,9 @@ building_vulturnia_rhino_transport_service = {
 	
 	requirements = {
 		building_requirement_aquis_faith = {
+			religion = aquis
+		}
+		building_requirement_aquis_animal_only = {
 			religion = aquis
 		}
 	}
@@ -161,6 +179,9 @@ building_vulturnia_lion_hunting_grounds = {
 		building_requirement_aquis_faith = {
 			religion = aquis
 		}
+		building_requirement_aquis_animal_only = {
+			religion = aquis
+		}
 	}
 	
 	province_modifier = {
@@ -184,6 +205,9 @@ building_vulturnia_elephant_construction_crew = {
 	
 	requirements = {
 		building_requirement_aquis_faith = {
+			religion = aquis
+		}
+		building_requirement_aquis_animal_only = {
 			religion = aquis
 		}
 	}
@@ -211,6 +235,9 @@ building_vulturnia_crow_animal_university = {
 		building_requirement_aquis_faith = {
 			religion = aquis
 		}
+		building_requirement_aquis_animal_only = {
+			religion = aquis
+		}
 	}
 	
 	province_modifier = {
@@ -236,6 +263,9 @@ building_vulturnia_wolf_community = {
 		building_requirement_aquis_faith = {
 			religion = aquis
 		}
+		building_requirement_aquis_animal_only = {
+			religion = aquis
+		}
 	}
 	
 	province_modifier = {
@@ -259,6 +289,9 @@ building_vulturnia_animal_holding = {
 	
 	requirements = {
 		building_requirement_aquis_faith = {
+			religion = aquis
+		}
+		building_requirement_aquis_animal_only = {
 			religion = aquis
 		}
 	}

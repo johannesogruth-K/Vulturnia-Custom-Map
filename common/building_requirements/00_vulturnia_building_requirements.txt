@@ -16,3 +16,19 @@ building_requirement_aquis_faith = {
 	
 	failure_desc = building_requirement_aquis_faith_failure
 }
+
+building_requirement_aquis_animal_only = {
+	name = building_requirement_aquis_animal_only
+	description = building_requirement_aquis_animal_only_desc
+	
+	requirement = {
+		trigger = {
+			religion = aquis
+			building_type = temple
+		}
+	}
+	
+	requirement_desc = building_requirement_aquis_animal_only_requirement
+	
+	failure_desc = building_requirement_aquis_animal_only_failure
+}
