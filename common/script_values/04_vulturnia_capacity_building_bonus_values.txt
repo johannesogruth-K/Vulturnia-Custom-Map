@@ -1,0 +1,21 @@
+# ==============================
+# Vulturnia Animal Capacity Building Bonus
+# ==============================
+# Temple and Animal holdings increase capacity by +30 each.
+# This is a simple, explicit rule to make the buildings meaningful for animal management.
+
+vulturnia_temple_capacity_bonus = {
+	value = 30
+}
+
+vulturnia_animal_holding_capacity_bonus = {
+	value = 30
+}
+
+vulturnia_animal_capacity_per_temple = {
+	value = 30
+}
+
+vulturnia_animal_capacity_per_holding = {
+	value = 30
+}

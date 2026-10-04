@@ -1,0 +1,9 @@
+l_english:
+  # ==============================
+  # Capacity building bonus localization
+  # ==============================
+  vulturnia_temple_capacity_bonus: "Temple Capacity"
+  vulturnia_temple_capacity_bonus_desc: "This temple adds +30 capacity to the province's animal economy."
+
+  vulturnia_animal_holding_capacity_bonus: "Animal Holding Capacity"
+  vulturnia_animal_holding_capacity_bonus_desc: "This animal holding adds +30 capacity to the province's animal economy."

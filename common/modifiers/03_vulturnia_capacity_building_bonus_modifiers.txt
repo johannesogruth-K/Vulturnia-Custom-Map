@@ -1,0 +1,17 @@
+# ==============================
+# Vulturnia Capacity Building Bonuses
+# ==============================
+# Temple and animal holdings each add +30 capacity.
+# This ensures the building system directly supports a larger animal population.
+
+vulturnia_temple_capacity_bonus = {
+	icon = "gfx/interface/icons/modifiers/modifier_temple_capacity.dds"
+	description = "vulturnia_temple_capacity_bonus_desc"
+	vulturnia_animal_capacity_limit = 30
+}
+
+vulturnia_animal_holding_capacity_bonus = {
+	icon = "gfx/interface/icons/modifiers/modifier_animal_holding_capacity.dds"
+	description = "vulturnia_animal_holding_capacity_bonus_desc"
+	vulturnia_animal_capacity_limit = 30
+}
